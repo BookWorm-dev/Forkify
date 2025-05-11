@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.parcel-cache/
+.cache/
+.env
+
+.DS_Store
+.vscode/
+*.log
+*.tmp
+
+src/css/
