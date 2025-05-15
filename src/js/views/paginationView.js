@@ -8,10 +8,7 @@ class PaginationView extends View {
     this._parentElement.addEventListener('click', function (e) {
       const btn = e.target.closest('.btn--inline');
       if (!btn) return;
-      console.log(btn);
-
       const goToPage = +btn.dataset.goto;
-      console.log(goToPage);
       handler(goToPage);
     });
   }
@@ -19,7 +16,6 @@ class PaginationView extends View {
   _generateMarkup() {
     const curPage = this._data.page;
     const numPages = Math.ceil(this._data.results.length / this._data.resultsPerPage);
-    console.log(numPages);
     const nextButton = `<button data-goto="${
       curPage + 1
     }" class="btn--inline pagination__btn--next">
