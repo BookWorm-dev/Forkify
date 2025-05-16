@@ -4,7 +4,7 @@
   "description": "Recipe application",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel index.html"
+    "build": "parcel index.html --dist-dir ./dist"
   },
   "author": "Kristina Grytsenko",
   "license": "ISC",
